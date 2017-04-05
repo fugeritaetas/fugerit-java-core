@@ -9,7 +9,7 @@ import javax.servlet.jsp.PageContext;
 import org.fugerit.java.core.lang.helpers.StringHelper;
 
 
-/**
+/*
  * <p>Libreria di funzioni di sostegno nello sviluppo di Tag Personalizzati.</p>
  * 
  * <p>In particolare vengono fornite delle funzioni per accedere ad attributi impostato nelle mappa applicative
@@ -20,28 +20,28 @@ import org.fugerit.java.core.lang.helpers.StringHelper;
  */
 public class TagUtilsHelper {
 
-	/**
+	/*
 	 * Costante rappresentante la mappa di contesto (context).
 	 */
 	public final static String SCOPE_CONTEXT = "context";
 
-	/**
+	/*
 	 * Costante rappresentante la mappa di sessione (session).
 	 */	
 	public final static String SCOPE_SESSION = "session";
 
-	/**
+	/*
 	 * Costante rappresentante la mappa della richiesta (request).
 	 */	
 	public final static String SCOPE_REQUEST = "request";
 
-	/**
+	/*
 	 * Costante rappresentante la mappa della pagina (page).
 	 */	
 	public final static String SCOPE_PAGE = "page";
 
 	
-	/**
+	/*
 	 * <p>Imposta un attributo nella mappa specificata, se lo scop à lasciato a null, viene utilizzato 'page'.</p>
 	 * 
 	 * @param pageContext	il page context del tag
@@ -64,7 +64,7 @@ public class TagUtilsHelper {
 		}		
 	}	
 
-	/**
+	/*
 	 * <p>Trova un bean impostato in una delle mappa dell' applicazione.</p>
 	 * 
 	 * @param pageContext	il page context del tag

@@ -8,7 +8,7 @@ import org.fugerit.java.core.util.PropsIO;
 
 public class Log4JConfig extends BasicConfig {
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = 8238463428937400722L;

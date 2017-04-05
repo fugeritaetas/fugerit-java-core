@@ -1,27 +1,3 @@
-/*****************************************************************
-<copyright>
-	Morozko Java Library org.fugerit.java.core.tools 
-
-	Copyright (c) 2006 Morozko
-
-	All rights reserved. This program and the accompanying materials
-	are made available under the terms of the Apache License v2.0
-	which accompanies this distribution, and is available at
-	http://www.apache.org/licenses/
-	(txt version : http://www.apache.org/licenses/LICENSE-2.0.txt
-	html version : http://www.apache.org/licenses/LICENSE-2.0.html)
-
-   This product includes software developed at
-   The Apache Software Foundation (http://www.apache.org/).
-</copyright>
-*****************************************************************/
-/*
- * @(#)ImageToArray.java
- *
- * @project  : org.fugerit.java.core.tools
- * @package  : org.fugerit.java.core.tools.util.img
- * @creation : 13-feb-2006
- */
 package org.fugerit.java.core.tools.util.img;
 
 import java.io.ByteArrayOutputStream;
@@ -30,8 +6,8 @@ import java.io.FileInputStream;
 
 import org.fugerit.java.core.io.StreamIO;
 
-/**
- * <p></p>
+/*
+ * 
  *
  * @author mfranci
  *

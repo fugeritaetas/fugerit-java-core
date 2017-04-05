@@ -2,12 +2,12 @@ package org.fugerit.java.core.web.auth.handler;
 
 import javax.servlet.http.HttpServletRequest;
 
-/**
+/*
  * basic implementation of auth handler
  * 
  * Some default resource name string are processed :
- * if resource is equal to constant RESOURCE_DISABLED -> return 1 (forbidden)
- * if resource is equal to constant RESOURCE_HIDDEN -> return 2 (hidden)
+ * if resource is equal to constant RESOURCE_DISABLED -&gt; return 1 (forbidden)
+ * if resource is equal to constant RESOURCE_HIDDEN -&gt; return 2 (hidden)
  * otherwise return 0 (authorized)
  * 
  * @author devel
@@ -15,12 +15,12 @@ import javax.servlet.http.HttpServletRequest;
  */
 public class BasicAuthHandler implements AuthHandler {
 
-	/** 
+	/* 
 	 * Name for disabled resource ("disabled")
 	 */
 	public static final String RESOURCE_DISABLED = "disabled";
 	
-	/** 
+	/* 
 	 * Name for hidden resource ("hidden")
 	 */	
 	public static final String RESOURCE_HIDDEN = "hidden";

@@ -18,7 +18,7 @@ import org.fugerit.java.core.db.dao.GenericDAO;
 import org.fugerit.java.core.db.dao.RSExtractor;
 import org.fugerit.java.core.db.dao.rse.IntegerRSE;
 
-/**
+/*
  * 
  * <p>Executes query on Data Base based on a query and param list</p>
  * 
@@ -32,7 +32,7 @@ public class QueryExecuror extends GenericDAO {
 	}
 
 	
-	/**
+	/*
 	 * <p>Given a SQL query in the specified forma, a list of parameters and a result set extractor
 	 * load all result returned by the query.</p>
 	 * 

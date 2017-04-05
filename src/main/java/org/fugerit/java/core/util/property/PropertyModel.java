@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class PropertyModel implements Serializable {
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = 3053915487540844538L;

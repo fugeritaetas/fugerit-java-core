@@ -17,7 +17,7 @@ public class EncodeTag extends TagSupportHelper {
 	
 	public static final String ATT_NAME_DEFAULT_SECURITY_ENCODER = "DefaultSecurityEncoder";
 	
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = -7446887068084987958L;

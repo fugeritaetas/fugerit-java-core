@@ -4,12 +4,12 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/**
+/*
  * Inteface for handling paged result 
  * 
  * @author fugerit
  *
- * @param <E>
+ * @param &lt;E&gt;
  */
 public interface PagedResult<T> {
 
@@ -23,100 +23,100 @@ public interface PagedResult<T> {
 	
 	public static final int FIRST_PAGE_INDEX = 1;
 	
-	/**
+	/*
 	 * The method getElementCount() returns this value if the element count is unavalable
 	 */
 	public final static Integer ELEMENT_COUNT_UNAVAILABLE = -1;
 	
-	/**
+	/*
 	 * <p>The position of the first element of the current pages ( (currentPage-1) * perPage )</p> 
 	 * 
 	 * @return	offset of the first element in this page
 	 */
 	public Integer getOffset();
 	
-	/**
+	/*
 	 * <p>Maximum number of elements in a page</p>
 	 * 
 	 * @return	maximum number of elements in a page
 	 */
 	public Integer getPerPage();
 
-	/**
+	/*
 	 * <p>Total number of elements in all pages</p>
 	 * 
 	 * @return	total number of elements in all pages
 	 */
 	public Long getElementCount();
 	
-	/**
+	/*
 	 * <p>Position of current page ( in the range 1 - n )</p>
 	 * 
 	 * @return	position of current page
 	 */
 	public Integer getCurrentPage();	
 	
-	/**
+	/*
 	 * <p>Total number of pages</p>
 	 * 
 	 * @return	total number of pages
 	 */
 	public Integer getPageCount();	
 	
-	/**
+	/*
 	 * <p>Number of elements in current page</p>
 	 * 
 	 * @return	the size of the current page
 	 */
 	public Integer getCurrentPageSize();
 	
-	/**
+	/*
 	 * <p>Elements in the current page</p>
 	 * 
 	 * @return	elements in the current page
 	 */
 	public Iterator<T> getPageElements();
 
-	/**
+	/*
 	 * <p>Elements in the current page</p>
 	 * 
 	 * @return	elements in the current page
 	 */
 	public List<T> getPageElementsList();
 	
-	/**
+	/*
 	 * <p>Iterator over page numbers ( 1 - n )</p>
 	 * 
 	 * @return	iterator over page numbers ( 1 - n )
 	 */
 	public Iterator<Integer> getPageCountIterator();
 	
-	/**
+	/*
 	 * Result code for this page
 	 * 
-	 * @return
+	 * @return result code
 	 */
 	public int getResultCode();
 	
-	/**
+	/*
 	 * Additional info of this page.
 	 * 
-	 * @return
+	 * @return	info
 	 */
 	public Map<String, Object> getInfo();
 	
 	
-	/** 
+	/* 
 	 * <code>true</code> if this is the last page.
 	 * 
-	 * @return
+	 * @return <code>true</code> if it's the last page
 	 */
 	public boolean isLastPage();
 	
-	/** 
+	/* 
 	 * <code>true</code> if this is the last page.
 	 * 
-	 * @return
+	 * @return <code>true</code> if it's the first page
 	 */
 	public boolean isFirstPage();	
 	
@@ -129,10 +129,10 @@ public interface PagedResult<T> {
 	// *******************************************************************************************
 	// *******************************************************************************************
 	
-	/**
+	/*
 	 * Virtual search key
 	 * 
-	 * @return
+	 * @return	the virtual search key
 	 */
 	public String getVirtualSearchKey();
 	
@@ -153,7 +153,7 @@ public interface PagedResult<T> {
 	// *******************************************************************************************
 	// *******************************************************************************************
 	
-	/**
+	/*
 	 * <code>true</code> if the the page contains the full result
 	 * 
 	 * @return

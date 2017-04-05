@@ -14,7 +14,7 @@ import org.fugerit.java.core.web.tld.helpers.TagSupportHelper;
 
 public class PrintHiddenTag extends TagSupportHelper {
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = -7446887068083444458L;

@@ -19,7 +19,7 @@ import org.fugerit.java.core.cfg.VersionUtils;
 public class VersionConfig extends BasicConfig {
 
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = 8415080002663193371L;

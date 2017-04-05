@@ -10,7 +10,7 @@ import org.fugerit.java.core.log.BasicLogObject;
 
 public class CommandBase extends BasicLogObject implements Serializable {
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = -289413529900746052L;

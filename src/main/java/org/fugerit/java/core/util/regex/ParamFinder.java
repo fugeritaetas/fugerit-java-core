@@ -36,7 +36,7 @@ public class ParamFinder extends BasicLogObject {
 	public static final String ALT1_PRE = "\\{";
 	public static final String ALT1_POST = "\\}";
 
-	/**
+	/*
 	 * Creates a ParamFinder with default substitution ${param}
 	 * 
 	 * @return
@@ -45,7 +45,7 @@ public class ParamFinder extends BasicLogObject {
 		return new ParamFinder( DEFAULT_PRE, DEFAULT_POST, 2, 1 );
 	}
 	
-	/**
+	/*
 	 * Creates a ParamFinder with alternative substitution {param}
 	 * 
 	 * @return

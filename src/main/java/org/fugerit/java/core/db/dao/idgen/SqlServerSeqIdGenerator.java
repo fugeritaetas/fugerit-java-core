@@ -1,11 +1,3 @@
-/*
- * @(#)SqlServerSeqIdGenerator.java
- *
- * @project    : org.fugerit.java.core.db
- * @package    : org.fugerit.java.core.db.dao.idgen
- * @creation   : 02/apr/07
- * @license	   : META-INF/LICENSE.TXT
- */
 package org.fugerit.java.core.db.dao.idgen;
 
 import java.sql.CallableStatement;
@@ -16,17 +8,10 @@ import org.fugerit.java.core.db.dao.DAOException;
 import org.fugerit.java.core.db.helpers.DAOID;
 
 
-/**
- * <p>
- *	<jdl:section>
- * 		<jdl:text lang='it'>
- * 		</jdl:text>
- * 		<jdl:text lang='en'>
- * 		</jdl:text>  
- *	</jdl:section>
- * </p>
- *
- * @author mfranci
+/*
+ * 
+ * 
+ * @author Matteo a.k.a. Fugerit (d@fugerit.org)
  *
  */
 public class SqlServerSeqIdGenerator extends BasicSeqIdGenerator {

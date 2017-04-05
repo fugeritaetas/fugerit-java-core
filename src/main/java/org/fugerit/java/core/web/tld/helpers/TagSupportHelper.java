@@ -20,7 +20,7 @@ public class TagSupportHelper extends TagSupport {
 		return this.findObject( this.getName() , this.getProperty(), value );
 	}
 	
-	/**
+	/*
 	 *	<p>Stampa un oggetto sull'output del tag.</p>
 	 * 
 	 * @param message	l'oggetto da stampare
@@ -58,7 +58,7 @@ public class TagSupportHelper extends TagSupport {
 		return sc+si;
 	}	
 	
-	/**
+	/*
 	 * <p>Trova un oggetto.</p>
 	 * 
 	 * @param name			il nome dell'oggetto da trovare
@@ -71,7 +71,7 @@ public class TagSupportHelper extends TagSupport {
 		return this.findObject( name, property, value, null );
 	}
 	
-	/**
+	/*
 	 * <p>Trova un oggetto.</p>
 	 * 
 	 * @param name			il nome dell'oggetto da trovare
@@ -93,89 +93,89 @@ public class TagSupportHelper extends TagSupport {
 		return obj;
 	}	
 	
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = 565826836474874032L;
 
-	/**
+	/*
 	 * @return Restituisce il valore di scope.
 	 */
 	public String getScope() {
 		return scope;
 	}
 
-	/**
+	/*
 	 * @param scope il valore di scope da impostare.
 	 */
 	public void setScope(String scope) {
 		this.scope = scope;
 	}
 
-	/**
+	/*
 	 * @return Restituisce il valore di styleClass.
 	 */
 	public String getStyleClass() {
 		return styleClass;
 	}
 
-	/**
+	/*
 	 * @param styleClass il valore di styleClass da impostare.
 	 */
 	public void setStyleClass(String styleClass) {
 		this.styleClass = styleClass;
 	}
 
-	/**
+	/*
 	 * @return Restituisce il valore di styleId.
 	 */
 	public String getStyleId() {
 		return styleId;
 	}
 
-	/**
+	/*
 	 * @param styleId il valore di styleId da impostare.
 	 */
 	public void setStyleId(String styleId) {
 		this.styleId = styleId;
 	}
 
-	/**
+	/*
 	 * @return Restituisce il valore di toScope.
 	 */
 	public String getToScope() {
 		return toScope;
 	}
 
-	/**
+	/*
 	 * @param toScope il valore di toScope da impostare.
 	 */
 	public void setToScope(String toScope) {
 		this.toScope = toScope;
 	}
 
-	/**
+	/*
 	 * @return Restituisce il valore di name.
 	 */
 	public String getName() {
 		return name;
 	}
 
-	/**
+	/*
 	 * @param name il valore di name da impostare.
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	/**
+	/*
 	 * @return Restituisce il valore di property.
 	 */
 	public String getProperty() {
 		return property;
 	}
 
-	/**
+	/*
 	 * @param property il valore di property da impostare.
 	 */
 	public void setProperty(String property) {

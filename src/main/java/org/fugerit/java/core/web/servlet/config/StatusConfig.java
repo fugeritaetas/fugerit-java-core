@@ -16,7 +16,7 @@ import org.fugerit.java.core.cfg.ConfigException;
 public class StatusConfig extends BasicConfig {
 
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = 84150833023293371L;

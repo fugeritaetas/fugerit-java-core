@@ -8,7 +8,7 @@ package org.fugerit.java.core.lang.helpers;
  * @release		: xxxx.xx.xx
  */
 
-/**
+/*
  * <p>Implementazione do-nothing di ExHandler.</p>
  * 
  * @author  Matteo Franci a.k.a. Fugerit

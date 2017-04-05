@@ -11,8 +11,8 @@ import org.fugerit.java.core.db.connect.ConnectionFactoryImpl;
 import org.fugerit.java.core.db.dao.DAOException;
 import org.fugerit.java.core.log.LogFacade;
 
-/**
- * <p></p>
+/*
+ * 
  *
  * @author mfranci
  *

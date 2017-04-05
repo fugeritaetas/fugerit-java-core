@@ -1,11 +1,3 @@
-/*
- * @(#)DefaultDocHandler.java
- *
- * @project    : serviceapp
- * @package    : net.jsomnium.jlib.mod.doc.filter
- * @creation   : 12/lug/07
- * @license	   : META-INF/LICENSE.TXT
- */
 package org.fugerit.java.core.doc.filter;
 
 import java.util.Properties;
@@ -19,17 +11,10 @@ import org.fugerit.java.core.log.BasicLogObject;
 import org.fugerit.java.core.xml.dom.DOMUtils;
 import org.w3c.dom.Element;
 
-/**
- * <p>
- *	<jdl:section>
- * 		<jdl:text lang='it'>
- * 		</jdl:text>
- * 		<jdl:text lang='en'>
- * 		</jdl:text>  
- *	</jdl:section>
- * </p>
- *
- * @author mfranci
+/*
+ * 
+ * 
+ * @author Matteo a.k.a. Fugerit (d@fugerit.org)
  *
  */
 public class DefaultDocHandler extends BasicLogObject implements DocHandler {

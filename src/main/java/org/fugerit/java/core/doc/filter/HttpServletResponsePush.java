@@ -1,11 +1,3 @@
-/*
- * @(#)HttpServletResponseData.java
- *
- * @project    : serviceapp
- * @package    : net.jsomnium.jlib.mod.web.filter
- * @creation   : 12/lug/07
- * @license	   : META-INF/LICENSE.TXT
- */
 package org.fugerit.java.core.doc.filter;
 
 import java.io.ByteArrayOutputStream;
@@ -18,17 +10,10 @@ import javax.servlet.http.HttpServletResponseWrapper;
 
 import org.fugerit.java.core.log.LogFacade;
 
-/**
- * <p>
- *	<jdl:section>
- * 		<jdl:text lang='it'>
- * 		</jdl:text>
- * 		<jdl:text lang='en'>
- * 		</jdl:text>  
- *	</jdl:section>
- * </p>
- *
- * @author mfranci
+/*
+ * 
+ * 
+ * @author Matteo a.k.a. Fugerit (d@fugerit.org)
  *
  */
 public class HttpServletResponsePush extends HttpServletResponseWrapper  {
@@ -61,14 +46,6 @@ public class HttpServletResponsePush extends HttpServletResponseWrapper  {
 		return new PrintWriter( this.getOutputStream() );
 	}
 
-	/**
-	 * <jdl:section>
-	 * 		<jdl:text lang='it'><p>Crea una nuova istanza di HttpServletResponseData.</p></jdl:text>
-	 * 		<jdl:text lang='en'><p>Creates a new instance of HttpServletResponseData.</p></jdl:text>
-	 * </jdl:section>
-	 *
-	 * @param arg0
-	 */
 	public HttpServletResponsePush(HttpServletResponse response) {
 		super(response);
 	}

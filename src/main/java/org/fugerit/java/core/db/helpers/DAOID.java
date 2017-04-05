@@ -1,39 +1,15 @@
-/*****************************************************************
-<copyright>
-	Morozko Java Library org.fugerit.java.core.db 
-
-	Copyright (c) 2006 Morozko
-
-	All rights reserved. This program and the accompanying materials
-	are made available under the terms of the Apache License v2.0
-	which accompanies this distribution, and is available at
-	http://www.apache.org/licenses/
-	(txt version : http://www.apache.org/licenses/LICENSE-2.0.txt
-	html version : http://www.apache.org/licenses/LICENSE-2.0.html)
-
-   This product includes software developed at
-   The Apache Software Foundation (http://www.apache.org/).
-</copyright>
-*****************************************************************/
-/*
- * @(#)DAOID.java
- *
- * @project	   : secinShared
- * @package	   : it.finanze.secin.shared.dao
- * @creation   : 10-ott-05 0.16.16
- */
 package org.fugerit.java.core.db.helpers;
 
 import java.util.StringTokenizer;
 
-/**
+/*
  * <p>.</p>
  *
  * @author Matteo Franci aka TUX2
  */
 public class DAOID extends Number {
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = 5594596221094010047L;

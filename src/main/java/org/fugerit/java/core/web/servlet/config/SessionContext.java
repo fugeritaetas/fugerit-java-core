@@ -9,7 +9,7 @@ import javax.servlet.http.HttpSession;
 
 public abstract class SessionContext implements Serializable {
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = -4543097476221921635L;
@@ -87,7 +87,7 @@ public abstract class SessionContext implements Serializable {
 
 class HttpSessionContext extends SessionContext {
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = -6927502334822765826L;

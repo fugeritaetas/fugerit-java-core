@@ -7,7 +7,7 @@ import org.fugerit.java.core.web.auth.model.AuthUser;
 import org.fugerit.java.core.web.auth.model.AuthUserUtil;
 import org.fugerit.java.core.web.tld.helpers.TagSupportHelper;
 
-/**
+/*
  * Custom tag to get NavData into request.
  * 
  * 'id' is mandatory (request attribute name where the NavData are stored)
@@ -15,7 +15,7 @@ import org.fugerit.java.core.web.tld.helpers.TagSupportHelper;
  * 
  * Version 1.0 (2016-12-02)
  * 
- * @author Fugerit <m@fugerit.org>
+ * @author Fugerit &lt;m@fugerit.org&gt;
  * 
  * @see org.fugerit.java.core.web.navmap.model.NavMap
  * @see org.fugerit.java.core.web.navmap.servlet.NavData
@@ -23,7 +23,7 @@ import org.fugerit.java.core.web.tld.helpers.TagSupportHelper;
  */
 public class GetAuthUser extends TagSupportHelper {
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = 2433943997865119114L;

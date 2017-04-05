@@ -6,19 +6,19 @@ import java.util.List;
 import org.fugerit.java.core.util.collection.KeyObject;
 import org.fugerit.java.core.util.collection.ListMapStringKey;
 
-/**
+/*
  * Menu wrapper
  * 
  * Version 1.0 (2016-12-02)
  * 
- * @author Fugerit <m@fugerit.org>
+ * @author Fugerit &lt;m@fugerit.org&gt;
  *
  * @see org.fugerit.java.core.web.navmap.model.NavMap
  *
  */
 public class NavMenu implements Serializable, KeyObject<String> {
 	
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = 3693695282316322807L;

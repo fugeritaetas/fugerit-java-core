@@ -7,7 +7,7 @@ import org.fugerit.java.core.log.BasicLogObject;
 
 public class VirtualPageCache<T> extends BasicLogObject implements Serializable {
 	
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = -6408904239036858385L;
@@ -30,7 +30,7 @@ public class VirtualPageCache<T> extends BasicLogObject implements Serializable 
 		return virtualKey+";"+currentPage;
 	}
 	
-	/**
+	/*
 	 * Returns a virtual page contained in the real page.
 	 * 
 	 * @param virtualKey

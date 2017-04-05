@@ -3,7 +3,7 @@ package org.fugerit.java.core.lang.helpers;
 import java.lang.reflect.Method;
 
 
-/**
+/*
  * <p>Helper class for invoiking methods by reflection</p> 
  * 
  * @author Matteo Franci a.k.a. Fugerit
@@ -12,17 +12,17 @@ import java.lang.reflect.Method;
  */
 public class MethodHelper {
 
-	/**
+	/*
 	 * Constant for empty argument values on invoking
 	 */
 	public static final Object[] NO_PARAM_VALUES = {};
 	
-	/**
+	/*
 	 * Constant for empty argument types on invoking
 	 */
 	public static final Class<?>[] NO_PARAM_TYPES = {};
 	
-	/**
+	/*
 	 * <p>Change the first character in a string <code>toUppercase()</code>.</p>
 	 * 
 	 * @param propertyName	the string to modify
@@ -32,7 +32,7 @@ public class MethodHelper {
 		return propertyName.substring( 0, 1 ).toUpperCase()+propertyName.substring( 1 );
 	}
 	
-	/**
+	/*
 	 * <p>Transform a property string in a setter method string</p>
 	 *
 	 * @param propertyName		the property name (for example 'name')
@@ -42,7 +42,7 @@ public class MethodHelper {
 		return "set"+getUpFirstForProperty( propertyName );
 	}
 	
-	/**
+	/*
 	 * <p>Transform a property string in a getter method string</p>
 	 *
 	 * @param propertyName		the property name (for example 'name')
@@ -52,7 +52,7 @@ public class MethodHelper {
 		return "get"+getUpFirstForProperty( propertyName );
 	}
 	
-	/**
+	/*
 	 * <p>Invoke a setter method on an object's property</p>
 	 * 
 	 * <p>In case the property is 'name', then method 'setName' will be invoked</p>
@@ -67,7 +67,7 @@ public class MethodHelper {
 		invoke(obj, getSetterNameForProperty(propertyName), paramType, paramValue);
 	}
 
-	/**
+	/*
 	 * <p>Invoke a getter method on an object's property</p>
 	 * 
 	 * <p>In case the property is 'name', then method 'getName' will be invoked</p>
@@ -81,7 +81,7 @@ public class MethodHelper {
 		return invoke(obj, getGetterNameForProperty( propertyName ), NO_PARAM_TYPES, NO_PARAM_VALUES );
 	}
 	
-	/**
+	/*
 	 * <p>Invoke a method with one argument only on an object</p>
 	 * 
 	 * @param obj			the object on which the method will be invoked
@@ -97,13 +97,13 @@ public class MethodHelper {
 		return invoke(obj, methodName, paramTypes, paramValues);
 	}
 	
-	/**
+	/*
 	 * <p>Invoke a method with multiple arguments on an object</p>
 	 * 
 	 * @param obj			the object on which the method will be invoked
-	 * @param methodNames	the name of the method
+	 * @param methodName	the name of the method
 	 * @param paramTypes	the types of the arguments
-	 * @param paramValue	the values of the arguments
+	 * @param paramValues	the values of the arguments
 	 * @return				the result of invokation
 	 * @throws Exception	in case something goes wrong
 	 */	

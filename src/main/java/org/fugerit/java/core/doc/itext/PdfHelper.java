@@ -21,7 +21,7 @@ import com.lowagie.text.pdf.PdfPageEventHelper;
 import com.lowagie.text.pdf.PdfTemplate;
 import com.lowagie.text.pdf.PdfWriter;
 
-/**
+/*
  * Questo à l'handler da usare!
  * 
  * @author mttfranci

@@ -6,12 +6,12 @@ import java.util.Iterator;
 import org.fugerit.java.core.util.collection.KeyObject;
 import org.fugerit.java.core.util.collection.ListMapStringKey;
 
-/**
+/*
  * NavEntry wrapper
  * 
  * Version 1.0 (2016-12-02)
  * 
- * @author Fugerit <m@fugerit.org>
+ * @author Fugerit &lt;m@fugerit.org&gt;
  *
  * @see org.fugerit.java.core.web.navmap.model.NavMap
  *
@@ -20,7 +20,7 @@ public class NavEntry implements Serializable, KeyObject<String> {
 
 	public static final String SESSION_ATT_NAME = "org.fugerit.java.mod.web.navmap.model.NavEntry#AttName";
 	
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = 3238506516488055084L;

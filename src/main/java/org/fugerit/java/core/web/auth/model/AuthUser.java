@@ -5,12 +5,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
+/*
  * Model object for User data.
  * 
  * Version 1.0 (2016-12-02)
  * 
- * @author Fugerit <m@fugerit.org>
+ * @author Fugerit &lt;m@fugerit.org&gt;
  *
  */
 public class AuthUser {

@@ -11,22 +11,22 @@ import java.util.Map;
 
 public class ListMap<K,T> extends AbstractList<T> implements Serializable {
 	
-	/**
+	/*
 	 * Add mode  STRICT ( raise a runtime exception in case of duplicate keys )
 	 */
 	public static final int ADD_MODE_STRICT = 1;
 	
-	/**
+	/*
 	 * Add mode LOOSE ( allow for key duplicate)
 	 */
 	public static final int ADD_MODE_LOOSE = 2;
 	
-	/**
+	/*
 	 * Default add mode (LOOSE)
 	 */
 	public static final int ADD_MODE_DEFAULT = ADD_MODE_LOOSE;
 	
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = -10202423525249408L;

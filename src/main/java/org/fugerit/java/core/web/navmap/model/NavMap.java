@@ -6,12 +6,12 @@ import org.fugerit.java.core.util.collection.ListMapStringKey;
 import org.fugerit.java.core.web.auth.handler.AllowAuthHandler;
 import org.fugerit.java.core.web.auth.handler.AuthHandler;
 
-/**
+/*
  * Main modeling object for NavMap library.
  * 
  * Version 1.0 (2016-12-02)
  * 
- * @author Fugerit <m@fugerit.org>
+ * @author Fugerit &lt;m@fugerit.org&gt;
  *
  * @see org.fugerit.java.core.web.navmap.model.NavMap
  *
@@ -20,7 +20,7 @@ public class NavMap implements Serializable {
 
 	public static final String CONTEXT_ATT_NAME = "org.fugerit.java.mod.web.navmap.model.NavMap#AttName";
 	
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = -3883392083434225523L;

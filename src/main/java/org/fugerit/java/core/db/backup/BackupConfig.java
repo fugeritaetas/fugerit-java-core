@@ -1,28 +1,3 @@
-/*****************************************************************
-<copyright>
-	Morozko Java Library org.fugerit.java.core.db 
-
-	Copyright (c) 2006 Morozko
-
-	All rights reserved. This program and the accompanying materials
-	are made available under the terms of the Apache License v2.0
-	which accompanies this distribution, and is available at
-	http://www.apache.org/licenses/
-	(txt version : http://www.apache.org/licenses/LICENSE-2.0.txt
-	html version : http://www.apache.org/licenses/LICENSE-2.0.html)
-
-   This product includes software developed at
-   The Apache Software Foundation (http://www.apache.org/).
-</copyright>
-*****************************************************************/
-/*
- * @(#)BackupConfig.java
- *
- * @project    : org.fugerit.java.core.db
- * @package    : org.fugerit.java.core.db.backup
- * @creation   : 05/set/06
- * @license	   : META-INF/LICENSE.TXT
- */
 package org.fugerit.java.core.db.backup;
 
 import java.sql.Connection;
@@ -46,15 +21,15 @@ import org.fugerit.java.core.xml.dom.DOMUtils;
 import org.fugerit.java.core.xml.dom.SearchDOM;
 import org.w3c.dom.Element;
 
-/**
- * <p></p>
+/*
+ * 
  *
- * @author mfranci
+ * @author Matteo a.k.a. Fugerit (d@fugerit.org)
  *
  */
 public class BackupConfig extends XMLConfigurableObject {
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = 6387090603156260057L;
@@ -279,54 +254,35 @@ public class BackupConfig extends XMLConfigurableObject {
 		return CheckUtils.isTrue( this.getGeneralProperties().getProperty( PROP_DELETE_FIRST ) );
 	}
 	
-	/**
+	/*
 	 * @return the factoryFrom
 	 */
 	public ConnectionFactory getFactoryFrom() {
 		return factoryFrom;
 	}
 
-	/**
+	/*
 	 * @return the factoryTo
 	 */
 	public ConnectionFactory getFactoryTo() {
 		return factoryTo;
 	}
 
-	/**
+	/*
 	 * @return the tableBackup
 	 */
 	public TableBackup getTableBackup() {
 		return tableBackup;
 	}
 
-	/**
-	 * @return the tableList
-	 */
 	public List<TableConfig> getTableList() {
 		return tableList;
 	}
 
-	/**
-	 * @return the generalProperties
-	 */
 	public Properties getGeneralProperties() {
 		return generalProperties;
 	}
 
-	/**
-	 * <p>
-	 *  <jdl:section>
-	 * 		<jdl:text lang='it'>Restituisce il valore del campo sequenceList.</jdl:text>
-	 * 		<jdl:text lang='en'>Returns the value of sequenceList.</jdl:text>  
-	 *  </jdl:section>
-	 * </p>
-	 *
-	 * @return <jdl:section>
-	 *         		<jdl:text lang='it'>il valore del campo sequenceList.</jdl:text>
-	 *         		<jdl:text lang='en'>the value of sequenceList.</jdl:text> 
-	 * 		   </jdl:section>
-	 */
 	public List<SequenceConfig> getSequenceList() {
 		return sequenceList;
 	}

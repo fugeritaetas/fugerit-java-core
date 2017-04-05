@@ -6,7 +6,7 @@ import java.net.URLEncoder;
 
 public class DefaultSecurityEncoder implements SecurityEncoder, Serializable {
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = -6034157965255717279L;

@@ -1,28 +1,3 @@
-/*****************************************************************
-<copyright>
-	Morozko Java Library org.fugerit.java.core.db 
-
-	Copyright (c) 2006 Morozko
-
-	All rights reserved. This program and the accompanying materials
-	are made available under the terms of the Apache License v2.0
-	which accompanies this distribution, and is available at
-	http://www.apache.org/licenses/
-	(txt version : http://www.apache.org/licenses/LICENSE-2.0.txt
-	html version : http://www.apache.org/licenses/LICENSE-2.0.html)
-
-   This product includes software developed at
-   The Apache Software Foundation (http://www.apache.org/).
-</copyright>
-*****************************************************************/
-/*
- * @(#)BackupAdaptor.java
- *
- * @project    : org.fugerit.java.core.db
- * @package    : org.fugerit.java.core.db.backup
- * @creation   : 25/set/06
- * @license	   : META-INF/LICENSE.TXT
- */
 package org.fugerit.java.core.db.backup;
 
 import java.sql.PreparedStatement;
@@ -32,18 +7,45 @@ import java.sql.SQLException;
 
 import org.w3c.dom.Element;
 
-/**
- * <p></p>
+/*
+ * <p>Interface for a backup adaptor.</p>
+ * 
+ * <p>Backup adaptor provides custom functionality for data to backup.</p>
  *
- * @author mfranci
+ * @author Matteo a.k.a. Fugerit (d@fugerit.org)
  *
  */
 public interface BackupAdaptor {
 
+	/*
+	 * Helper method for setting parameter to a PreparedStatement
+	 * 
+	 * @param ps		PreparedStatement for current query
+	 * @param rsmd		ResultSetMetadataData for current query
+	 * @param obj		The current parameter value to set
+	 * @param index		the current paramter index to set (starting from 1)
+	 * @throws SQLException		if anything goes wrong
+	 */
 	public void set( PreparedStatement ps, ResultSetMetaData rsmd, Object obj, int index ) throws SQLException;
 	
+	/*
+	 * Helper method for getting objects from a ResultSet
+	 * 
+	 * @param rs		the ResultSet to look from
+	 * @param rsmd		ResultSetMetaData for current query
+	 * @param index		The index of the object to get (starting from 1)
+	 * @return			the object at given index on current row
+	 * @throws SQLException		if anything goes wrong
+	 */
 	public Object get( ResultSet rs, ResultSetMetaData rsmd, int index ) throws SQLException;
 	
+	
+	/*
+	 * Configure the adaptor
+	 * 
+	 * @param config		the custom configuration for this adaptor
+	 * @throws Exception	if configuration fail
+	 */
 	public void configure( Element config ) throws Exception;
 	
 }

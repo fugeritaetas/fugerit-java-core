@@ -16,7 +16,7 @@ public class ParamMap implements Serializable {
 
 	public static final String PARAM_MAP_GENERATE = "ParamMapGenerate";
 	
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = -5053311423985375268L;

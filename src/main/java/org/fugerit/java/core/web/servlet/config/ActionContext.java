@@ -13,7 +13,7 @@ import org.fugerit.java.core.web.servlet.request.ParamMap;
 
 public class ActionContext implements Serializable {
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = -4995800761539244745L;

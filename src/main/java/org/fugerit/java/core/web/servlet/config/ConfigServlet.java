@@ -43,7 +43,7 @@ public class ConfigServlet extends LogObjectServlet {
 	}
 
 	
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = -2567054666335688813L;

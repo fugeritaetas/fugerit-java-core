@@ -78,7 +78,7 @@ public class StreamIO {
 		return baos.toByteArray();
 	}
 	
-    /**
+    /*
      * <p>Riversa un Reader in un Writer.</p>
      * 
      * @param src       la sorgente
@@ -92,7 +92,7 @@ public class StreamIO {
         return ((new StreamIO(mode, buffer)).pipe(src, dst));
     }
     
-    /**
+    /*
      * <p>Riversa un Reader in un Writer (Viene usato il buffer di
      * default).</p>
      * 
@@ -106,7 +106,7 @@ public class StreamIO {
         return pipeChar(src, dst, mode, BUFFERSIZE_DEFAULT);
     }
     
-    /**
+    /*
      * <p>Riversa un Reader in un Writer (Viene usato il buffer di
      * default e non viene chiuso nessuno dei due stream).</p>
      * 
@@ -119,7 +119,7 @@ public class StreamIO {
         return pipeChar(src, dst, MODE_CLOSE_NONE, BUFFERSIZE_DEFAULT);
     }        
     
-    /**
+    /*
      * <p>Riversa un InputStream in un OutputStream.</p>
      * 
      * @param src       la sorgente
@@ -133,7 +133,7 @@ public class StreamIO {
         return ((new StreamIO(mode, buffer)).pipe(src, dst));
     }
     
-    /**
+    /*
      * <p>Riversa un InputStream in un OutputStream (Viene usato il buffer di
      * default).</p>
      * 
@@ -147,7 +147,7 @@ public class StreamIO {
         return pipeStream(src, dst, mode, BUFFERSIZE_DEFAULT);
     }
     
-    /**
+    /*
      * <p>Riversa un InputStream in un OutputStream (Viene usato il buffer di
      * default e non viene chiuso nessuno dei due stream).</p>
      * 
@@ -160,49 +160,49 @@ public class StreamIO {
         return pipeStream(src, dst, MODE_CLOSE_NONE, BUFFERSIZE_DEFAULT);
     }    
     
-    /**
+    /*
      * <p>Modalita che lascia aperti entrambi gli stream alla fine dell'operazione.</p>
      */
     public static final int MODE_CLOSE_NONE = 0;
     
-    /**
+    /*
      * <p>Modalita che chiude entrambi gli stream alla fine dell'operazione.</p>
      */    
     public static final int MODE_CLOSE_BOTH = 4;
     
-    /**
+    /*
      * <p>Modalita che chiude il solo stream di input alla fine dell'operazione.</p>
      */        
     public static final int MODE_CLOSE_IN_ONLY = 1;
     
     
-    /**
+    /*
      * <p>Modalita che chiude il solo stream di output alla fine dell'operazione.</p>
      */        
     public static final int MODE_CLOSE_OUT_ONLY = 2;
     
     
-    /**
+    /*
      * <p>Buffer di piccole dimensioni.</p>
      */    
     public static final int BUFFERSIZE_LOW = 512;
     
-    /**
+    /*
      * <p>Buffer di medie dimensioni.</p>
      */        
     public static final int BUFFERSIZE_MEDIUM = 1024;
     
-    /**
+    /*
      * <p>Buffer di grandi dimensioni.</p>
      */        
     public static final int BUFFERSIZE_HIGH = 2048;
     
-    /**
+    /*
      * <p>Buffer di dimensioni predefinite.</p>
      */        
     public static final int BUFFERSIZE_DEFAULT = BUFFERSIZE_MEDIUM;
     
-    /**
+    /*
      * <p>Nessun buffer.</p>
      */    
     public static final int BUFFERSIZE_NOBUFFER = 1;
@@ -211,7 +211,7 @@ public class StreamIO {
     
     public int bufferSize;  // le dimensioni del buffer di lettura usato
     
-    /**
+    /*
      * <p>Restituisce il valore di mode.</p>
      * 
      * @return il valore di mode.
@@ -220,7 +220,7 @@ public class StreamIO {
         return mode;
     }
     
-    /**
+    /*
      * <p>Restituisce il valore di bufferSize.</p>
      * 
      * @return il valore di bufferSize.
@@ -229,7 +229,7 @@ public class StreamIO {
         return bufferSize;
     }    
     
-    /**
+    /*
      * <p>Crea un nuovo StreamIO</p>
      * 
      * 
@@ -239,7 +239,7 @@ public class StreamIO {
         this.bufferSize = bufferSize;
     }
     
-    /**
+    /*
      * <p>Riversa il contenuto di un InputStream in un OutputStream.</p>
      * 
      * @param src   la sorgente
@@ -265,7 +265,7 @@ public class StreamIO {
         return result;
     }
 
-    /**
+    /*
      * <p>Riversa il contenuto di un Reader in un Writer.</p>
      * 
      * @param src   la sorgente

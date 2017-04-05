@@ -1,28 +1,3 @@
-/*****************************************************************
-<copyright>
-	Morozko Java Library org.opinf.jlib.std 
-
-	Copyright (c) 2006 Morozko
-
-	All rights reserved. This program and the accompanying materials
-	are made available under the terms of the Apache License v2.0
-	which accompanies this distribution, and is available at
-	http://www.apache.org/licenses/
-	(txt version : http://www.apache.org/licenses/LICENSE-2.0.txt
-	html version : http://www.apache.org/licenses/LICENSE-2.0.html)
-
-   This product includes software developed at
-   The Apache Software Foundation (http://www.apache.org/).
-</copyright>
-*****************************************************************/
-/*
- * @(#)DefaultHandlerComp.java
- *
- * @project     : org.opinf.jlib.std
- * @package     : org.fugerit.java.core.xml.sax.dh
- * @creation	: 15-dic-2004 23.21.32
- * @release		: xxxx.xx.xx
- */
 package org.fugerit.java.core.xml.sax.dh;
 
 import java.io.IOException;
@@ -42,8 +17,8 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 import org.xml.sax.helpers.DefaultHandler;
 
-/**
- * <p></p>
+/*
+ * 
  * 
  * @author  Matteo Franci a.k.a. Fugerit
  */
@@ -116,7 +91,7 @@ public class DefaultHandlerComp extends DefaultHandler {
     
     private ContentHandler wrappedContentHandler;
 
-    /**
+    /*
      * <p>Restituisce il valore di wrappedContentHandler.</p>
      * 
      * @return il valore di wrappedContentHandler.
@@ -125,7 +100,7 @@ public class DefaultHandlerComp extends DefaultHandler {
         return wrappedContentHandler;
     }
     
-    /**
+    /*
      * <p>Imposta wrappedContentHandler.</p>
      * 
      * @param wrappedContentHandler il wrappedContentHandler da impostare.
@@ -232,7 +207,7 @@ public class DefaultHandlerComp extends DefaultHandler {
     
     private EntityResolver wrappedEntityResolver;
 
-    /**
+    /*
      * <p>Restituisce il valore di wrappedEntityResolver.</p>
      * 
      * @return il valore di wrappedEntityResolver.
@@ -241,7 +216,7 @@ public class DefaultHandlerComp extends DefaultHandler {
         return wrappedEntityResolver;
     }
     
-    /**
+    /*
      * <p>Imposta wrappedEntityResolver.</p>
      * 
      * @param wrappedEntityResolver il wrappedEntityResolver da impostare.
@@ -268,7 +243,7 @@ public class DefaultHandlerComp extends DefaultHandler {
     
     private DTDHandler wrappedDTDHandler;
 
-    /**
+    /*
      * <p>Restituisce il valore di wrappedDTDHandler.</p>
      * 
      * @return il valore di wrappedDTDHandler.
@@ -277,7 +252,7 @@ public class DefaultHandlerComp extends DefaultHandler {
         return wrappedDTDHandler;
     }
     
-    /**
+    /*
      * <p>Imposta wrappedDTDHandler.</p>
      * 
      * @param wrappedDTDHandler il wrappedDTDHandler da impostare.
@@ -309,7 +284,7 @@ public class DefaultHandlerComp extends DefaultHandler {
         this.getWrappedErrorHandler().warning(arg0);
     }
 
-    /**
+    /*
      * <p>Restituisce il valore di wrappedHandler.</p>
      * 
      * @return il valore di wrappedHandler.
@@ -318,7 +293,7 @@ public class DefaultHandlerComp extends DefaultHandler {
         return wrappedErrorHandler;
     }
     
-    /**
+    /*
      * <p>Imposta wrappedHandler.</p>
      * 
      * @param wrappedHandler il wrappedHandler da impostare.

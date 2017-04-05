@@ -18,7 +18,7 @@ public class PropertyList extends AbstractList<PropertyModel> implements Seriali
 		return list;
 	}
 	
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = -1020665080525249408L;

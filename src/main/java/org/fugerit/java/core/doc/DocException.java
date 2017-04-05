@@ -1,5 +1,11 @@
 package org.fugerit.java.core.doc;
 
+/*
+ * 
+ * 
+ * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ *
+ */
 public class DocException extends Exception {
 
 	private String code;
@@ -13,7 +19,7 @@ public class DocException extends Exception {
 		return code;
 	}
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = -8872968598674596827L;

@@ -1,5 +1,11 @@
 package org.fugerit.java.core.doc;
 
+/*
+ * 
+ * 
+ * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ *
+ */
 public class DocBarcode extends DocElement {
 
 	private int size;

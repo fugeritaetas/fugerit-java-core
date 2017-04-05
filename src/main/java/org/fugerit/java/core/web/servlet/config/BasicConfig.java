@@ -9,7 +9,7 @@ import org.w3c.dom.Element;
 
 public abstract class BasicConfig extends PropertiesConfigurableObject {
 	
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = 7942370774582080658L;

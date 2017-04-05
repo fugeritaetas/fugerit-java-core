@@ -1,27 +1,3 @@
-/*****************************************************************
-<copyright>
-	Morozko Java Library org.fugerit.java.core.db 
-
-	Copyright (c) 2006 Morozko
-
-	All rights reserved. This program and the accompanying materials
-	are made available under the terms of the Apache License v2.0
-	which accompanies this distribution, and is available at
-	http://www.apache.org/licenses/
-	(txt version : http://www.apache.org/licenses/LICENSE-2.0.txt
-	html version : http://www.apache.org/licenses/LICENSE-2.0.html)
-
-   This product includes software developed at
-   The Apache Software Foundation (http://www.apache.org/).
-</copyright>
-*****************************************************************/
-/*
- * @(#)ConnectionFactory.java
- *
- * @project	   : simoss
- * @package	   : it.finanze.secin.shared.dao
- * @creation   : 27-mag-2005 7.53.15
- */
 package org.fugerit.java.core.db.connect;
 
 import java.sql.Connection;
@@ -46,7 +22,7 @@ import org.fugerit.java.core.xml.dom.SearchDOM;
 import org.w3c.dom.Element;
 
 
-/**
+/*
  * <p>Implementing class for ConnectioNFactory.</p>
  * 
  * @author fugerit
@@ -72,17 +48,17 @@ public abstract class ConnectionFactoryImpl extends BasicLogObject implements Co
 
 	public static final String PROP_CF_MODE = "db-cf-mode";		// valori = ds ( data source ) o dc ( direct connection )
 	
-	/**
+	/*
 	 * Direct connection mode
 	 */
 	public static final String PROP_CF_MODE_DC = "DC";
 	
-	/**
+	/*
 	 * Strict datasource mode
 	 */
 	public static final String PROP_CF_MODE_DS = "DS";
 	
-	/**
+	/*
 	 * Loose datasource mode
 	 */
 	public static final String PROP_CF_MODE_DS2 = "DS2";

@@ -17,7 +17,7 @@ import org.w3c.dom.Element;
 
 public class CommandConfig extends BasicConfig {
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = 736509706377526499L;

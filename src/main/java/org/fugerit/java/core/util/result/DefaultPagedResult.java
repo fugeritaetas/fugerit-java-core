@@ -5,7 +5,7 @@ import java.util.List;
 
 public class DefaultPagedResult<T> extends AbstractPagedResult<T>  implements Serializable {
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = -4104228790597768353L;
@@ -16,7 +16,7 @@ public class DefaultPagedResult<T> extends AbstractPagedResult<T>  implements Se
 	
 	private String virtualKey;
 	
-	/**
+	/*
 	 * <p>Creates a new paged result</p>
 	 * 
 	 * @param perPage			maximum number of elements in a page
@@ -31,7 +31,7 @@ public class DefaultPagedResult<T> extends AbstractPagedResult<T>  implements Se
 		return result;
 	}
 	
-	/**
+	/*
 	 * <p>Creates a new paged result</p>
 	 * 
 	 * @param perPage			maximum number of elements in a page
@@ -46,10 +46,10 @@ public class DefaultPagedResult<T> extends AbstractPagedResult<T>  implements Se
 		return result;
 	}
 	
-	/**
+	/*
 	 * PagedResult per esisti negativi.
 	 * 
-	 * @param <T>
+	 * @param &lt;T&gt;
 	 * @param resultCode
 	 * @return
 	 */

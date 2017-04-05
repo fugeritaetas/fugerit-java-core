@@ -2,12 +2,12 @@ package org.fugerit.java.core.web.auth.handler;
 
 import javax.servlet.http.HttpServletRequest;
 
-/**
+/*
  * Interface for handling authorization
  * 
  * Version 1.0 (2016-12-02)
  * 
- * @author Fugerit <m@fugerit.org>
+ * @author Fugerit &lt;m@fugerit.org&gt;
  *
  */
 public interface AuthHandler {
@@ -20,7 +20,7 @@ public interface AuthHandler {
 	
 	public static final int AUTH_HIDDEN = 2;
 	
-	/**
+	/*
 	 * 
 	 * @param request		request to check for authorization status
 	 * @param resource		resource to check against

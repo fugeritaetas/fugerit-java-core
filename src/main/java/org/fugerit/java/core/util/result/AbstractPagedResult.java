@@ -47,7 +47,7 @@ public abstract class AbstractPagedResult<T> extends BasicLogObject implements P
 
 	
 
-	/**
+	/*
 	 * <p>The position of the first element of the current pages ( (currentPage-1) * perPage )</p> 
 	 * 
 	 * @return	offset of the first element in this page
@@ -56,7 +56,7 @@ public abstract class AbstractPagedResult<T> extends BasicLogObject implements P
 		return new Integer( this.offset );
 	}
 
-	/**
+	/*
 	 * <p>Maximum number of elements in a page</p>
 	 * 
 	 * @return	maximum number of elements in a page
@@ -65,7 +65,7 @@ public abstract class AbstractPagedResult<T> extends BasicLogObject implements P
 		return new Integer( this.perPage );
 	}
 
-	/**
+	/*
 	 * <p>Total number of elements in all pages</p>
 	 * 
 	 * @return	total number of elements in all pages
@@ -74,7 +74,7 @@ public abstract class AbstractPagedResult<T> extends BasicLogObject implements P
 		return new Long( this.elementCount );
 	}
 
-	/**
+	/*
 	 * <p>Position of current page ( in the range 1 - n )</p>
 	 * 
 	 * @return	position of current page
@@ -83,7 +83,7 @@ public abstract class AbstractPagedResult<T> extends BasicLogObject implements P
 		return new Integer( this.currentPage );
 	}
 	
-	/**
+	/*
 	 * <p>Total number of pages</p>
 	 * 
 	 * @return	total number of pages
@@ -92,7 +92,7 @@ public abstract class AbstractPagedResult<T> extends BasicLogObject implements P
 		return new Integer( pageCount );
 	}		
 
-	/**
+	/*
 	 * <p>Number of elements in current page</p>
 	 * 
 	 * @return	the size of the current page
@@ -101,7 +101,7 @@ public abstract class AbstractPagedResult<T> extends BasicLogObject implements P
 		return new Integer( this.pageElements.size() );
 	}
 	
-	/**
+	/*
 	 * <p>Elements in the current page</p>
 	 * 
 	 * @return	elements in the current page
@@ -110,7 +110,7 @@ public abstract class AbstractPagedResult<T> extends BasicLogObject implements P
 		return this.pageElements.iterator();
 	}
 
-	/**
+	/*
 	 * <p>Elements in the current page</p>
 	 * 
 	 * @return	elements in the current page
@@ -119,7 +119,7 @@ public abstract class AbstractPagedResult<T> extends BasicLogObject implements P
 		return this.pageElements;
 	}
 	
-	/**
+	/*
 	 * <p>Iterator over page numbers ( 1 - n )</p>
 	 * 
 	 * @return	iterator over page numbers ( 1 - n )

@@ -21,14 +21,14 @@ import org.fugerit.java.core.web.navmap.model.NavMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
+/*
  * NavMap library initialization.
  * 
  * Put NavMap opject in the Context.
  * 
  * Version 1.0 (2016-12-02)
  * 
- * @author Fugerit <m@fugerit.org>
+ * @author Fugerit &lt;m@fugerit.org&gt;
  *
  * @see org.fugerit.java.core.web.navmap.model.NavMap
  *

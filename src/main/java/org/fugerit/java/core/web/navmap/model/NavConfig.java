@@ -15,12 +15,12 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-/**
+/*
  * NavMap library configuration reading.
  * 
  * Version 1.0.2 (2016-12-12)
  * 
- * @author Fugerit <m@fugerit.org>
+ * @author Fugerit &lt;m@fugerit.org&gt;
  *
  * @see org.fugerit.java.core.web.navmap.model.NavMap
  *

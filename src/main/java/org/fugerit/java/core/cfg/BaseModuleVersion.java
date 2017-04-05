@@ -6,10 +6,10 @@ import java.util.Properties;
 
 import org.fugerit.java.core.util.PropsIO;
 
-/**
+/*
  * <p>Helper class for wrapping a module versione meta information.</p>
  * 
- * @author Matteo a.k.a. Fugerit <d@fugerit.org>
+ * @author Matteo a.k.a. Fugerit (d@fugerit.org)
  *
  */
 public class BaseModuleVersion implements ModuleVersion { 
@@ -43,27 +43,27 @@ public class BaseModuleVersion implements ModuleVersion {
 
 	// inherited methods - end
 	
-	/**
+	/*
 	 * Module Name key
 	 */
 	public static final String PROP_MODULE_NAME = "module.name";
 	
-	/**
+	/*
 	 * Module Version key
 	 */
 	public static final String PROP_MODULE_VERSION = "module.version";
 	
-	/**
+	/*
 	 * Module Date key
 	 */
 	public static final String PROP_MODULE_DATE = "module.date";
 	
-	/**
+	/*
 	 * Default dependancies.
 	 */
 	public static final Properties NO_DEPENDANCIES = new Properties();
 
-	/**
+	/*
 	 * Constructor loading dependancies from a resources file
 	 * 
 	 * @param name		name of the module
@@ -76,7 +76,7 @@ public class BaseModuleVersion implements ModuleVersion {
 		this( name, version, date, loadSafe( dependanciesCS ) );
 	}
 	
-	/**
+	/*
 	 * <p>Constructor loading name, version and date from a properties object</p>
 	 * 
 	 * @param props			the property object
@@ -89,7 +89,7 @@ public class BaseModuleVersion implements ModuleVersion {
 				dependancies );
 	}
 	
-	/**
+	/*
 	 * <p>Constructor loading name, version and date from a properties object</p>
 	 * 
 	 * @param props			the property object
@@ -98,7 +98,7 @@ public class BaseModuleVersion implements ModuleVersion {
 		this( props, NO_DEPENDANCIES ) ;
 	}
 
-	/**
+	/*
 	 * Constructor loading dependancies from a resources file
 	 * 
 	 * @param name		name of the module

@@ -104,6 +104,9 @@
 			<plugin>
 			  <groupId>org.apache.maven.plugins</groupId>
 			  <artifactId>maven-javadoc-plugin</artifactId>
+		        <configuration>
+		          <stylesheetfile>src/main/javadoc/stylesheet.css</stylesheetfile>
+		        </configuration>			  
 			  <executions>
 			    <execution>
 			      <id>attach-javadocs</id>

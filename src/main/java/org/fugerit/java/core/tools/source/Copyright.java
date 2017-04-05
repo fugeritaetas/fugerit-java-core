@@ -1,11 +1,3 @@
-/*
- * @(#)Copyright.java
- *
- * @project    : org.fugerit.java.core.tools
- * @package    : org.opinf.jlib.tools.mod.source
- * @creation   : 03/nov/06
- * @license	   : META-INF/LICENSE.TXT
- */
 package org.fugerit.java.core.tools.source;
 
 import java.io.File;
@@ -19,14 +11,10 @@ import org.fugerit.java.core.tools.util.args.Arg;
 import org.fugerit.java.core.tools.util.args.ArgList;
 import org.fugerit.java.core.tools.util.args.ArgUtils;
 
-/**
+/*
  * <p>
- *	<jdl:section>
- * 		<jdl:text lang='it'>
- * 		</jdl:text>
- * 		<jdl:text lang='en'>
- * 		</jdl:text>  
- *	</jdl:section>
+ *	
+ * 		
  * </p>
  *
  * @author mfranci
@@ -93,7 +81,7 @@ class CopyrightFileFun extends AbstractFileFun {
 				String text = FileIO.readString( file );
 				if ( text.indexOf( Copyright.CONFIG.getString( "copyright.config.copyright.check" ) ) == -1 ) {
 					LogFacade.getLog().info( "CopyrightFileFun.handleFile adding copyright info" );
-					String add = "/*******************************************************\n";
+					String add = "/******************************************************\n";
 					add+= CONFIG_TAG_OPEN+"\n";
 					add+= this.copyright+"\n";
 					add+= CONFIG_TAG_CLOSE+"\n";

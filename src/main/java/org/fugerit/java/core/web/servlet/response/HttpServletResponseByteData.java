@@ -14,13 +14,6 @@ import org.fugerit.java.core.log.LogFacade;
 
 public class HttpServletResponseByteData extends HttpServletResponseWrapper  {
 
-//	/* (non-Javadoc)
-//	 * @see javax.servlet.ServletResponseWrapper#setContentType(java.lang.String)
-//	 */
-//	public void setContentType(String type) {
-//		throw ( new RuntimeException( "methodod setContentType unsupported on HttpServletResponseData" ) );
-//	}
-
 	private PrintWriter writer = null;
 	
 	private ServletOutputStream stream = null;
@@ -57,32 +50,11 @@ public class HttpServletResponseByteData extends HttpServletResponseWrapper  {
 		return this.writer;
 	}
 
-	/**
-	 * <jdl:section>
-	 * 		<jdl:text lang='it'><p>Crea una nuova istanza di HttpServletResponseData.</p></jdl:text>
-	 * 		<jdl:text lang='en'><p>Creates a new instance of HttpServletResponseData.</p></jdl:text>
-	 * </jdl:section>
-	 *
-	 * @param arg0
-	 */
 	public HttpServletResponseByteData(HttpServletResponse response) {
 		super(response);
 		this.baos = new ByteArrayOutputStream();
 	}
 
-	/**
-	 * <p>
-	 *  <jdl:section>
-	 * 		<jdl:text lang='it'>Restituisce il valore del campo baos.</jdl:text>
-	 * 		<jdl:text lang='en'>Returns the value of baos.</jdl:text>  
-	 *  </jdl:section>
-	 * </p>
-	 *
-	 * @return <jdl:section>
-	 *         		<jdl:text lang='it'>il valore del campo baos.</jdl:text>
-	 *         		<jdl:text lang='en'>the value of baos.</jdl:text> 
-	 * 		   </jdl:section>
-	 */
 	public ByteArrayOutputStream getBaos() {
 		return baos;
 	}

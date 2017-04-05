@@ -2,7 +2,7 @@ package org.fugerit.java.core.web.encoder;
 
 public class EncodingException extends Exception {
 
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = 3137488353756832630L;

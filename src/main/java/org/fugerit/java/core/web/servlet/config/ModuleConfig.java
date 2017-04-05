@@ -30,7 +30,7 @@ public class ModuleConfig extends BasicConfig {
 	
 	private List moduleList;
 	
-	/**
+	/*
 	 * 
 	 */
 	private static final long serialVersionUID = 8795230475686969554L;

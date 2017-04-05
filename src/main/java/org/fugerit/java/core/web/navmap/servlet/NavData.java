@@ -4,17 +4,17 @@ import org.fugerit.java.core.web.navmap.model.NavEntry;
 import org.fugerit.java.core.web.navmap.model.NavMap;
 import org.fugerit.java.core.web.navmap.model.NavMenu;
 
-/**
+/*
  * Navigation Data wrapper
  * 
  * Version 1.0 (2016-12-02)
  * 
- * @author Fugerit <m@fugerit.org>
+ * @author Fugerit &lt;m@fugerit.org&gt;
  *
  */
 public class NavData {
 
-	/**
+	/*
 	 * Attribute name for the current navigation data
 	 */
 	public static final String ATT_NAME = "CurrentNavData";
