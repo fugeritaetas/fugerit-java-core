@@ -1,0 +1,1 @@
+# fugerit-java-core
