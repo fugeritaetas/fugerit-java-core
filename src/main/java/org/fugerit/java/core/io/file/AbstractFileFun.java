@@ -26,7 +26,6 @@
 package org.fugerit.java.core.io.file;
 
 import java.io.File;
-
 import java.io.IOException;
 
 import org.fugerit.java.core.io.FileFun;
@@ -36,7 +35,7 @@ import org.fugerit.java.core.io.FileFun;
  *	<jdl:section>
  * 		<jdl:text lang='it'>
  * 		Implementazione astratta di <code>FileFun</code>,
- * 		è sufficiente implementare il metodo <code>handleFile(File)</code>.
+ * 		Ã  sufficiente implementare il metodo <code>handleFile(File)</code>.
  * 		</jdl:text>
  * 		<jdl:text lang='en'>
  * 		Abstract implementation of <code>FileFun</code>,

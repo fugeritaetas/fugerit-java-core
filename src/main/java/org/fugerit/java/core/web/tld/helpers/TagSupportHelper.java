@@ -62,8 +62,8 @@ public class TagSupportHelper extends TagSupport {
 	 * <p>Trova un oggetto.</p>
 	 * 
 	 * @param name			il nome dell'oggetto da trovare
-	 * @param property		la propriet‡ da invocare sull'oggetto
-	 * @param value			il valore eventualmente da usare per l'oggetto ( se name Ë <code>null</code>)
+	 * @param property		la propriet√† da invocare sull'oggetto
+	 * @param value			il valore eventualmente da usare per l'oggetto ( se name √® <code>null</code>)
 	 * @return				l'oggetto
 	 * @throws JspException	se si verificano problemi durante la ricerca
 	 */
@@ -75,8 +75,8 @@ public class TagSupportHelper extends TagSupport {
 	 * <p>Trova un oggetto.</p>
 	 * 
 	 * @param name			il nome dell'oggetto da trovare
-	 * @param property		la propriet‡ da invocare sull'oggetto
-	 * @param value			il valore eventualmente da usare per l'oggetto ( se name Ë <code>null</code>)
+	 * @param property		la propriet√† da invocare sull'oggetto
+	 * @param value			il valore eventualmente da usare per l'oggetto ( se name √† <code>null</code>)
 	 * @param parameter		il parametro della richiesta eventualmente utilizzato come valore.
 	 * @return				l'oggetto
 	 * @throws JspException	se si verificano problemi durante la ricerca

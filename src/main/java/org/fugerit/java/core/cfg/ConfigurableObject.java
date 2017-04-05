@@ -34,7 +34,7 @@ import org.w3c.dom.Element;
  * <p>A class implementing ConfigurableObject interface is an object which
  *  should be configured through an XML Document or a Properties object.</p>
  *
- * @author Morozko
+ * @author Matteo a.k.a. Fugerit <d@fugerit.org>
  *
  */
 public interface ConfigurableObject {
@@ -58,7 +58,7 @@ public interface ConfigurableObject {
 	/**
 	 * <p>Configure the object.</p>
 	 * 
-	 * @param source				The property object to use for configuration.
+	 * @param props					The property object to use for configuration.
 	 * @throws ConfigException		If troubles arise during object configuration.
 	 */
 	public void configure( Properties props ) throws ConfigException;
@@ -66,7 +66,7 @@ public interface ConfigurableObject {
 	/**
 	 * <p>Configure the object.</p>
 	 * 
-	 * @param source				The tag object to use for configuration.
+	 * @param tag					The tag object to use for configuration.
 	 * @throws ConfigException		If troubles arise during object configuration.
 	 */
 	public void configure( Element tag ) throws ConfigException;

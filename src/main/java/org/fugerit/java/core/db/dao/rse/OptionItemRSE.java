@@ -25,7 +25,6 @@
 package org.fugerit.java.core.db.dao.rse;
 
 import java.sql.ResultSet;
-
 import java.sql.SQLException;
 
 import org.fugerit.java.core.db.dao.RSExtractor;

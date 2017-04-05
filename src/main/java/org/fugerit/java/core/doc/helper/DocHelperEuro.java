@@ -10,7 +10,7 @@ public class DocHelperEuro extends DocHelper {
 			char c = temp.charAt( k );
 			int i = (int)c;
 			if ( i == 164 ) {
-				text.append( "€" );
+				text.append( "Ã " );
 			} else {
 				text.append( c );
 			}

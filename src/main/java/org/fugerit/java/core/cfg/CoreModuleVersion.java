@@ -1,16 +1,20 @@
 package org.fugerit.java.core.cfg;
 
-import java.util.Properties;
-
+/**
+ * <p>Module versione for this library (Fugerit Java Library).</p>
+ * 
+ * @author Matteo a.k.a. Fugerit <d@fugerit.org>
+ *
+ */
 public class CoreModuleVersion extends BaseModuleVersion {
 
-	public static final String MODULE_NAME = "Fugerit Java Core";
-	public static final String MODULE_VERSION = "1.0.0";
-	public static final String MODULE_DATE = "2017-01-02";
-	public static final Properties DEPENDANCIES = new Properties();
+	private static final String MODULE_CONFIG_PATH = "/org/fugerit/java/core/cfg/module.properties";
 	
+	/**
+	 * <p>Default constructor</p>
+	 */
 	public CoreModuleVersion() {
-		super(MODULE_NAME, MODULE_VERSION, MODULE_DATE, DEPENDANCIES);
+		super( loadSafe( MODULE_CONFIG_PATH ) );
 	}
 
 }

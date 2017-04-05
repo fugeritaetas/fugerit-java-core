@@ -38,7 +38,6 @@ import org.fugerit.java.core.db.connect.ConnectionFactory;
 import org.fugerit.java.core.db.connect.ConnectionFactoryImpl;
 import org.fugerit.java.core.db.dao.BasicDAOFactory;
 import org.fugerit.java.core.db.dao.DAOException;
-import org.fugerit.java.core.log.LogFacade;
 import org.fugerit.java.core.xml.dom.DOMIO;
 import org.fugerit.java.core.xml.dom.DOMUtils;
 import org.fugerit.java.core.xml.dom.SearchDOM;

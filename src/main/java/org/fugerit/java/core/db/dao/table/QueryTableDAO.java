@@ -41,7 +41,6 @@ import org.fugerit.java.core.db.dao.BasicDAOFactory;
 import org.fugerit.java.core.db.dao.DAOException;
 import org.fugerit.java.core.db.dao.FieldList;
 import org.fugerit.java.core.db.dao.RSExtractor;
-import org.fugerit.java.core.log.LogFacade;
 
 /**
  * <p></p>

@@ -11,6 +11,18 @@ import java.util.StringTokenizer;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.fugerit.java.core.cfg.ConfigException;
+import org.fugerit.java.core.doc.DocBase;
+import org.fugerit.java.core.doc.DocBorders;
+import org.fugerit.java.core.doc.DocCell;
+import org.fugerit.java.core.doc.DocElement;
+import org.fugerit.java.core.doc.DocPara;
+import org.fugerit.java.core.doc.DocRow;
+import org.fugerit.java.core.doc.DocTable;
+import org.fugerit.java.core.doc.filter.DocContext;
+import org.fugerit.java.core.doc.itext.ITextDocHandler;
+import org.w3c.dom.Element;
+
 import jxl.CellView;
 import jxl.Workbook;
 import jxl.biff.DisplayFormat;
@@ -31,18 +43,6 @@ import jxl.write.WritableCellFormat;
 import jxl.write.WritableFont;
 import jxl.write.WritableSheet;
 import jxl.write.WritableWorkbook;
-
-import org.fugerit.java.core.cfg.ConfigException;
-import org.fugerit.java.core.doc.DocBase;
-import org.fugerit.java.core.doc.DocBorders;
-import org.fugerit.java.core.doc.DocCell;
-import org.fugerit.java.core.doc.DocElement;
-import org.fugerit.java.core.doc.DocPara;
-import org.fugerit.java.core.doc.DocRow;
-import org.fugerit.java.core.doc.DocTable;
-import org.fugerit.java.core.doc.filter.DocContext;
-import org.fugerit.java.core.doc.itext.ITextDocHandler;
-import org.w3c.dom.Element;
 
 public class XlsTypeHandler extends BasicTypeHandler {
 	

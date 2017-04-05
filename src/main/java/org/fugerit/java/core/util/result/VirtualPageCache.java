@@ -2,7 +2,6 @@ package org.fugerit.java.core.util.result;
 
 import java.io.Serializable;
 import java.util.HashMap;
-import java.util.logging.Level;
 
 import org.fugerit.java.core.log.BasicLogObject;
 

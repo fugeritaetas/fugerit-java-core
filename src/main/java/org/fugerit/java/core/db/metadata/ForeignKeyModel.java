@@ -78,7 +78,7 @@ public class ForeignKeyModel  {
 
 	/**
 	 * Le chiavi sono le colonne della tabella cui viene fatto riferimento.
-	 * I valori sono le colonne corrispondenti nella tabella dove la foreign key è definita.
+	 * I valori sono le colonne corrispondenti nella tabella dove la foreign key Ã  definita.
 	 * 
 	 * @return the columnMap
 	 */
@@ -97,7 +97,7 @@ public class ForeignKeyModel  {
 	}
 	
 	/**
-	 * <p>Restituisce l'elenco delle colonne interne per questo foreign key alla tabella in cui la chiave è definita.</p>
+	 * <p>Restituisce l'elenco delle colonne interne per questo foreign key alla tabella in cui la chiave Ã  definita.</p>
 	 * 
 	 * @param tableModel
 	 * @return

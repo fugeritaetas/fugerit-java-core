@@ -49,10 +49,12 @@ public class DefaultConfigurableObject extends AbstractConfigurableObject implem
 	private static final long serialVersionUID = 1596415517623964943L;
 
 	/**
-	 * <p>Convers an XML Tag in a Properties object.</p> 
+	 * <p>Converts an XML Tag in a Properties object.</p> 
 	 * 
-	 * @param tag
-	 * @return
+	 * <p>Each attribute on the tag is set as a key/value entry in the resulting properties object.</p>
+	 * 
+	 * @param tag		The tag for configu
+	 * @return			The properties
 	 */
 	public static Properties defaultConversion( Element tag ) {
 		return DOMUtils.attributesToProperties( tag );

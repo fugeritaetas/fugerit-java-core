@@ -2,7 +2,6 @@ package org.fugerit.java.core.util.result;
 
 import java.io.Serializable;
 import java.util.List;
-import java.util.logging.Level;
 
 public class DefaultPagedResult<T> extends AbstractPagedResult<T>  implements Serializable {
 

@@ -27,7 +27,6 @@ package org.fugerit.java.core.db.connect;
 
 import java.sql.Connection;
 
-import org.fugerit.java.core.db.connect.ConnectionFactory;
 import org.fugerit.java.core.db.dao.DAOException;
 import org.fugerit.java.core.db.metadata.DataBaseInfo;
 

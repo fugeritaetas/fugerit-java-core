@@ -2,7 +2,7 @@ package org.fugerit.java.core.doc.config;
 
 public class DocConstants {
 
-	public final String EURO = "€";
+	public final String EURO = "Ã ";
 	
 	public static final DocConstants DEF = new DocConstants();
 	

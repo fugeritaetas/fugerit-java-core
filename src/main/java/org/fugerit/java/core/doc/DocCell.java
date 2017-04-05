@@ -16,7 +16,7 @@
 </copyright>
 *****************************************************************/
 /*
- * @(#)DocCellù.java
+ * @(#)DocCellÃ .java
  *
  * @project    : org.fugerit.java.core.doc
  * @package    : org.fugerit.java.core.doc

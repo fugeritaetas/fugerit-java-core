@@ -22,7 +22,7 @@ import com.lowagie.text.pdf.PdfTemplate;
 import com.lowagie.text.pdf.PdfWriter;
 
 /**
- * Questo � l'handler da usare!
+ * Questo à l'handler da usare!
  * 
  * @author mttfranci
  *

@@ -1,7 +1,5 @@
 package org.fugerit.java.core.util.result;
 
-import javax.el.MethodNotFoundException;
-
 public interface VirtualFinder {
 
 	/**

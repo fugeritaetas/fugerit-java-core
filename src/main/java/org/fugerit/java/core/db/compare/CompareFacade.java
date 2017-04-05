@@ -36,7 +36,6 @@ import java.util.Iterator;
 import org.fugerit.java.core.db.metadata.query.QueryColumnMap;
 import org.fugerit.java.core.db.metadata.query.QueryColumnModel;
 import org.fugerit.java.core.db.metadata.query.QueryMetadataFacade;
-import org.fugerit.java.core.log.LogFacade;
 import org.fugerit.java.core.xml.dom.DOMIO;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

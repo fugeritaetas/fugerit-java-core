@@ -48,9 +48,7 @@ import org.fugerit.java.core.db.backup.DefaultBackupAdaptor;
 public class BackupAdaptorFilterChar extends DefaultBackupAdaptor {
 
 	private static final String[][] FILTER = {
-		{ "“", "\"" },
-		{ "’", "'" },
-		{ "–", "-" },
+		
 	};
 	
 	/* (non-Javadoc)

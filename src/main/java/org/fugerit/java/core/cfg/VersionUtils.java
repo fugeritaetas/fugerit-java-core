@@ -3,27 +3,42 @@ package org.fugerit.java.core.cfg;
 import java.util.Properties;
 
 import org.fugerit.java.core.lang.helpers.ClassHelper;
-import org.fugerit.java.core.log.LogFacade;
 
+/**
+ * <p>Helper class for wrapping a module versione meta information.</p>
+ * 
+ * @author Matteo a.k.a. Fugerit <d@fugerit.org>
+ *
+ */
 public class VersionUtils {
 
 	public static Properties MODULES = new Properties();
-	static {
-		try {
-			MODULES.load( VersionUtils.class.getResourceAsStream( "/org/fugerit/java/core/cfg/module.properties" ) );
-		} catch (Throwable e) {
-			LogFacade.handleError( e );
-		}
-	}
-	
+
+	/**
+	 * Register a module
+	 * 
+	 * @param name			the name of the module to register
+	 * @param className		the implementing class for the module
+	 */
 	public synchronized static void registerModule( String name, String className ) {
 		MODULES.setProperty( name , className );
 	}
 	
+	/**
+	 * Returns the registered module list
+	 * 
+	 * @return	the module list
+	 */
 	public synchronized static Properties getModuleList() {
 		return MODULES;
 	}
 	
+	/**
+	 * Return a versione string for a module
+	 * 
+	 * @param moduleName	the module to look for
+	 * @return				the version string
+	 */
 	public static String getVersionString( String moduleName ) {
 		String versionString = null;
 		String type = getModuleList().getProperty( moduleName );
@@ -44,18 +59,6 @@ public class VersionUtils {
 			versionString = "[01] Module does not exist";
 		}
 		return versionString;
-	}
-
-	public static void main( String[] args ) {
-		try {
-			System.out.println( "TEST 1" ); 
-			Properties moduleList = getModuleList();
-			for ( String key : moduleList.stringPropertyNames() ) {
-				System.out.println( key+" -> "+getVersionString( key ) );
-			}
-		} catch (Exception e)  {
-			e.printStackTrace();
-		}
 	}
 	
 }

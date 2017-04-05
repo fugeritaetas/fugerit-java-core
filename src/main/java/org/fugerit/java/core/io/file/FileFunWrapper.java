@@ -35,7 +35,7 @@ import org.fugerit.java.core.io.FileFun;
  *	<jdl:section>
  * 		<jdl:text lang='it'>
  * 		Classe che incapsula una <code>FileFun</code>.
- * 		può essere usata per aggiungere funzionalità ad
+ * 		puÃ  essere usata per aggiungere funzionalitÃ  ad
  * 		un'altra <code>FileFun</code>.
  * 		</jdl:text>
  * 		<jdl:text lang='en'>

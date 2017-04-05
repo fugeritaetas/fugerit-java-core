@@ -26,13 +26,11 @@
 package org.fugerit.java.core.db.connect;
 
 import java.sql.Connection;
-
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.fugerit.java.core.db.connect.ConnectionFactory;
 import org.fugerit.java.core.log.LogFacade;
 
 /**

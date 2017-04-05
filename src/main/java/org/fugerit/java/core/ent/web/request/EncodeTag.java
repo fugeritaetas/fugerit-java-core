@@ -1,11 +1,9 @@
 package org.fugerit.java.core.ent.web.request;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.jsp.JspException;
 
 import org.fugerit.java.core.web.encoder.SecurityEncoder;

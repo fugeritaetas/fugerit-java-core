@@ -28,7 +28,7 @@ package org.fugerit.java.core.cfg;
 /**
  * <p>Exception for handling unexpected situations during configuration.</p>
  *
- * @author Morozko
+ * @author Matteo a.k.a. Fugerit <d@fugerit.org>
  *
  */
 public class ConfigException extends Exception {

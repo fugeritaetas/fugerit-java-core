@@ -2,7 +2,6 @@ package org.fugerit.java.core.web.tld.helpers;
 
 import java.lang.reflect.Method;
 
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.PageContext;
@@ -43,7 +42,7 @@ public class TagUtilsHelper {
 
 	
 	/**
-	 * <p>Imposta un attributo nella mappa specificata, se lo scop Ë lasciato a null, viene utilizzato 'page'.</p>
+	 * <p>Imposta un attributo nella mappa specificata, se lo scop √† lasciato a null, viene utilizzato 'page'.</p>
 	 * 
 	 * @param pageContext	il page context del tag
 	 * @param scope			la mappa dove impostare l'attributo (<code>null</code> viene preso come 'page')
@@ -51,7 +50,7 @@ public class TagUtilsHelper {
 	 * @param value			il valore da attribuire all'attributo
 	 */
 	public static void setAttibute( PageContext pageContext, String scope, String name, Object value ) throws JspException {
-		// imposto lo scope, se non Ë definito imposto allo scope di default ( SCOPE_PAGE ).
+		// imposto lo scope, se non √† definito imposto allo scope di default ( SCOPE_PAGE ).
 		scope = StringHelper.value( scope, SCOPE_PAGE );
 		// verifico dove va impostato lo scope
 		if ( scope.equalsIgnoreCase( SCOPE_PAGE ) ) {
@@ -71,7 +70,7 @@ public class TagUtilsHelper {
 	 * @param pageContext	il page context del tag
 	 * @param scope			la mappa dove cercare l'attributo (<code>null</code> per cercarlo in tutti).
 	 * @param name			il nome dell' attributo da cercare
-	 * @param property		la propriet‡ da cercare sull' oggetto trovato dal parametro name (se <code>null</code> viene riportato l'oggetto stesso).
+	 * @param property		la propriet√† da cercare sull' oggetto trovato dal parametro name (se <code>null</code> viene riportato l'oggetto stesso).
 	 * @return				l'oggetto richiesto
 	 * @throws JspException
 	 */
@@ -89,7 +88,7 @@ public class TagUtilsHelper {
 		} else if ( scope.equalsIgnoreCase( SCOPE_CONTEXT ) ) {
 			result = pageContext.getServletContext().getAttribute( name );
 		}
-		// se la propriet‡ Ë stata impostata la invoco sull' oggetto trovato
+		// se la propriet√† √† stata impostata la invoco sull' oggetto trovato
 		if ( property != null ) {
 			try {
 				Class[] c = new Class[0];

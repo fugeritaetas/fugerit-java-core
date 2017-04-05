@@ -34,7 +34,7 @@ import java.sql.SQLException;
  * 
  * <p>La tabella deve esistere in entrambi i database ed
  * essere formata dagli stessi campi, inoltre devono
- * essere rispettati eventuali vincoli di integrit‡
+ * essere rispettati eventuali vincoli di integrit√†
  * su altre tabelle.</p>
  * 
  * @author  Matteo Franci a.k.a. Fugerit
@@ -42,7 +42,7 @@ import java.sql.SQLException;
 public interface TableBackup {
 
 	/**
-	 * Propriet‡ che indica ogni quante righe va eseguito il commit dei dati.
+	 * Propriet√†  che indica ogni quante righe va eseguito il commit dei dati.
 	 */
 	public static final String PROP_COMMIT_ON = "commit-on";
 	
@@ -65,30 +65,30 @@ public interface TableBackup {
 	public static final String PROP_STATEMENT_MODE_SINGLE = "single";
 	
 	/**
-	 * Propriet‡ che governa la modalit‡ di inserimento tra la tabella destinazione e quella di origine.
+	 * Propriet√† che governa la modalit√† di inserimento tra la tabella destinazione e quella di origine.
 	 */
 	public static final String PROP_INSERT_MODE = "insert-mode";
 	
 	/**
-	 * Modalit‡ di inserimento che prevede l'inserimento solo se la tabella di origine e di destinazione
+	 * Modalit√† di inserimento che prevede l'inserimento solo se la tabella di origine e di destinazione
 	 * hanno esattamente gli stessi campi.
 	 */		
 	public static final String PROP_INSERT_MODE_VALUE_STRICT = "strict";
 	
 	/**
-	 * Modalit‡ di inserimento che prevede l'inserimento nella tabella destinazione, di tutti i campi presenti
+	 * Modalit√† di inserimento che prevede l'inserimento nella tabella destinazione, di tutti i campi presenti
 	 * nella tabella di origine (LEFT).
 	 */		
 	public static final String PROP_INSERT_MODE_VALUE_LEFT = "left";
 	
 	/**
-	 * Modalit‡ di inserimento che prevede l'inserimento nella tabella destinazione, di tutti i campi presenti
+	 * Modalit√† di inserimento che prevede l'inserimento nella tabella destinazione, di tutti i campi presenti
 	 * nella tabella di destinazione stessa (RIGHT).
 	 */	
 	public static final String PROP_INSERT_MODE_VALUE_RIGHT = "right";
 	
 	/**
-	 * Modalit‡ di inserimento che prevede l'inserimento nella tabella destinazione, dei soli campi
+	 * Modalit√† di inserimento che prevede l'inserimento nella tabella destinazione, dei soli campi
 	 * esistenti sia nella tabella di destinazione che in quella di origine.
 	 */
 	public static final String PROP_INSERT_MODE_VALUE_LOOSE = "loose";
@@ -101,7 +101,7 @@ public interface TableBackup {
      * @param table     la tabella di cui fare il backup
      * @param from      una connessione valida col db sorgente
      * @param to        una connessione valida col db destinazione
-     * @return          <code>0</code> se tutto Ë andato correttamente,
+     * @return          <code>0</code> se tutto √† andato correttamente,
      *                  o un <code>int</code> rappresentante il numero di
      *                  record non inseriti correttamente
      * @throws SQLException     se si verifica qualche errore fatale
@@ -116,9 +116,9 @@ public interface TableBackup {
      * @param table     la tabella di cui fare il backup
      * @param from      una connessione valida col db sorgente
      * @param to        una connessione valida col db destinazione
-     * @param select    la query da usare per estrarre i dati (puÚ eventualmente 
+     * @param select    la query da usare per estrarre i dati (pu√† eventualmente 
      *                  essere usata per filtrare il risultato).
-     * @return          <code>0</code> se tutto Ë andato correttamente,
+     * @return          <code>0</code> se tutto √† andato correttamente,
      *                  o un <code>int</code> rappresentante il numero di
      *                  record non inseriti correttamente
      * @throws SQLException     se si verifica qualche errore fatale

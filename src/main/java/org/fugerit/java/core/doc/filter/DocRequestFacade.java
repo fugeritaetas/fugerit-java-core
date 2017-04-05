@@ -98,7 +98,7 @@ public class DocRequestFacade extends BasicLogObject {
 			// fine processamento
 			
 			try {
-				//se il doc handler è null usiamo il default doc handler
+				//se il doc handler Ã  null usiamo il default doc handler
 				if ( docHandler == null ) {
 					this.getLogger().info( "no doc handler found for document : "+name+", using default doc handler" );
 					docHandler = DEF;

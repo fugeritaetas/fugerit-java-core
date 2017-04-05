@@ -26,7 +26,6 @@
 package org.fugerit.java.core.doc.tlds;
 
 import java.io.IOException;
-import java.io.StringWriter;
 
 import javax.servlet.jsp.JspException;
 
