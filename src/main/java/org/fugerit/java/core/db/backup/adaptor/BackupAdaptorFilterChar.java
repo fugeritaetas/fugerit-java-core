@@ -10,7 +10,7 @@ import org.fugerit.java.core.db.backup.DefaultBackupAdaptor;
 /*
  * 
  * 
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  *
  */
 public class BackupAdaptorFilterChar extends DefaultBackupAdaptor {

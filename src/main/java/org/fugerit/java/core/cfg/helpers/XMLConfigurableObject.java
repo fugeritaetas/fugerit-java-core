@@ -9,7 +9,7 @@ import org.fugerit.java.core.cfg.ConfigException;
  * the <code>configure(Element)</code> method.
  * The <code>configure(Properties)</code> method will throw an exception.</p>
  *
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  *
  */
 public abstract class XMLConfigurableObject extends AbstractConfigurableObject {

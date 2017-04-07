@@ -7,13 +7,13 @@ import org.fugerit.java.core.cfg.ConfigurableObject;
 import org.fugerit.java.core.xml.dom.DOMUtils;
 import org.w3c.dom.Element;
 
-/*
+/**
  * <p>Default implementation of <code>ConfigurableObject</code>,
  * <code>configure(Properties)</code> method is a donothing, while
  * <code>configure(Element)</code> calls <code>configure(Properties)</code>
  * with the Element attributes transformed in a Properties object.</p>
  *
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  *
  */
 public class DefaultConfigurableObject extends AbstractConfigurableObject implements ConfigurableObject {

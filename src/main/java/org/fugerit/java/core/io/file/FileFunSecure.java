@@ -9,7 +9,7 @@ import org.fugerit.java.core.lang.helpers.ExHandler;
 /*
  * 
  * 
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  *
  */
 public class FileFunSecure extends FileFunWrapper {

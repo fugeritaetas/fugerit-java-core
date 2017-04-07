@@ -12,7 +12,7 @@ import org.w3c.dom.Element;
  * 
  * <p>Backup adaptor provides custom functionality for data to backup.</p>
  *
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  *
  */
 public interface BackupAdaptor {

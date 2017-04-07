@@ -24,7 +24,7 @@ import org.xml.sax.InputSource;
 /*
  * 
  * 
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  *
  */
 public class DataFilterConfig {

@@ -8,7 +8,7 @@ import org.w3c.dom.Element;
  * the <code>configure(Properties)</code> method.
  * The <code>configure(Element)</code> method will throw an exception.</p>
  *
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  *
  */
 public abstract class PropertiesConfigurableObject  extends AbstractConfigurableObject {

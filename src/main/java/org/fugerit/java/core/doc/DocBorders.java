@@ -3,7 +3,7 @@ package org.fugerit.java.core.doc;
 /*
  * 
  * 
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  *
  */
 public class DocBorders {

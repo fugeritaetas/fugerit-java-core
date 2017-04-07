@@ -9,7 +9,7 @@ import org.fugerit.java.core.db.metadata.DataBaseInfo;
  * <p>Una implementazione di ConnectionFactory fornisce un metodo semplice
  * per accedere a delle Connessioni verso una specifica sorgente dati jdbc.</p>
  * 
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  */
 public interface ConnectionFactory {
 	
