@@ -1,39 +1,38 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.fugerit</groupId>
-  <artifactId>java.core</artifactId>
-  
-  <version>0.1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+	<groupId>org.fugerit</groupId>
+	<artifactId>java.core</artifactId>
 
-    <name>java.core</name>
-  	<description>Java Core Library for JDK 1.6 and up</description>
+	<version>0.1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>java.core</name>
+	<description>Java Core Library for JDK 1.6 and up</description>
 	<url>http://www.fugerit.org/java/core</url>
 
-	  <licenses>
-	    <license>
-	      <name>Apache License, Version 2.0</name>
-	      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-	      <distribution>repo</distribution>
-	    </license>
-	  </licenses>	
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 
 	<scm>
-	  <connection>scm:git:git://github.com/fugeritaetas/fugerit-java-core.git</connection>
-	  <developerConnection>scm:git:ssh://github.com/fugeritaetas/fugerit-java-core.git</developerConnection>
-	  <url>http://github.com/fugeritaetas/fugerit-java-core/tree/master</url>
+		<connection>scm:git:git://github.com/fugeritaetas/fugerit-java-core.git</connection>
+		<developerConnection>scm:git:ssh://github.com/fugeritaetas/fugerit-java-core.git</developerConnection>
+		<url>http://github.com/fugeritaetas/fugerit-java-core/tree/master</url>
 	</scm>
 
 	<build>
-		<!-- 
-		<sourceDirectory>src/main/java</sourceDirectory>
-		 -->
+		<!-- <sourceDirectory>src/main/java</sourceDirectory> -->
 		<resources>
 			<resource>
 				<directory>src</directory>
@@ -50,6 +49,20 @@
 					<compilerVersion>1.6</compilerVersion>
 					<source>1.6</source>
 					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+				<configuration>
+					<!-- derby log file switch to target directory -->
+					<systemProperties>
+						<property>
+							<name>derby.stream.error.file</name>
+							<value>target/derby.log</value>
+						</property>
+					</systemProperties>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -90,32 +103,32 @@
 				</executions>
 			</plugin>
 			<plugin>
-			  <groupId>org.apache.maven.plugins</groupId>
-			  <artifactId>maven-source-plugin</artifactId>
-			  <executions>
-			    <execution>
-			      <id>attach-sources</id>
-			      <goals>
-			        <goal>jar</goal>
-			      </goals>
-			    </execution>
-			  </executions>
-			</plugin>		
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
-			  <groupId>org.apache.maven.plugins</groupId>
-			  <artifactId>maven-javadoc-plugin</artifactId>
-		        <configuration>
-		          <stylesheetfile>src/main/javadoc/stylesheet.css</stylesheetfile>
-		        </configuration>			  
-			  <executions>
-			    <execution>
-			      <id>attach-javadocs</id>
-			      <goals>
-			        <goal>jar</goal>
-			      </goals>
-			    </execution>
-			  </executions>
-			</plugin>				
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<configuration>
+					<stylesheetfile>src/main/javadoc/stylesheet.css</stylesheetfile>
+				</configuration>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -212,7 +225,7 @@
 			<artifactId>sqltool</artifactId>
 			<version>2.2.4</version>
 		</dependency>
-		
+
 	</dependencies>
 
 </project>
