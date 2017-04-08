@@ -4,17 +4,17 @@ import java.util.Properties;
 
 import org.fugerit.java.core.lang.helpers.ClassHelper;
 
-/*
+/**
  * <p>Helper class for wrapping a module versione meta information.</p>
  * 
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  *
  */
 public class VersionUtils {
 
 	public static Properties MODULES = new Properties();
 
-	/*
+	/**
 	 * Register a module
 	 * 
 	 * @param name			the name of the module to register
@@ -24,7 +24,7 @@ public class VersionUtils {
 		MODULES.setProperty( name , className );
 	}
 	
-	/*
+	/**
 	 * Returns the registered module list
 	 * 
 	 * @return	the module list
@@ -33,7 +33,7 @@ public class VersionUtils {
 		return MODULES;
 	}
 	
-	/*
+	/**
 	 * Return a versione string for a module
 	 * 
 	 * @param moduleName	the module to look for

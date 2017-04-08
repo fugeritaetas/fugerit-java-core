@@ -11,11 +11,11 @@ import org.fugerit.java.core.util.PropsIO;
 import org.fugerit.java.core.xml.dom.DOMIO;
 import org.w3c.dom.Element;
 
-/*
+/**
  * <p>Abstract implementation of ConfigurableObject interface.
  * 	Subclasses must only implement configure(Properties) and configure(Document).</p>
  *
- * @author Morozko
+ * @author Matteo a.k.a. Fugerit
  *
  */
 public abstract class AbstractConfigurableObject extends BasicLogObject implements ConfigurableObject, Serializable {
@@ -28,16 +28,19 @@ public abstract class AbstractConfigurableObject extends BasicLogObject implemen
 	/* (non-Javadoc)
 	 * @see org.fugerit.java.core.cfg.ConfigurableObject#configure(java.util.Properties)
 	 */
+	@Override
 	public abstract void configure(Properties props) throws ConfigException;
 
 	/* (non-Javadoc)
 	 * @see org.fugerit.java.core.cfg.ConfigurableObject#configure(org.w3c.dom.Element)
 	 */
+	@Override	
 	public abstract void configure(Element tag) throws ConfigException;
 
 	/* (non-Javadoc)
 	 * @see org.fugerit.java.core.cfg.ConfigurableObject#configureProperties(java.io.InputStream)
 	 */
+	@Override	
 	public void configureProperties(InputStream source) throws ConfigException {
 		try {
 			this.configure( PropsIO.loadFromStream( source ) );
@@ -49,6 +52,7 @@ public abstract class AbstractConfigurableObject extends BasicLogObject implemen
 	/* (non-Javadoc)
 	 * @see org.fugerit.java.core.cfg.ConfigurableObject#configureXML(java.io.InputStream)
 	 */
+	@Override	
 	public void configureXML(InputStream source) throws ConfigException {
 		try {
 			this.configure( DOMIO.loadDOMDoc( source ).getDocumentElement() );

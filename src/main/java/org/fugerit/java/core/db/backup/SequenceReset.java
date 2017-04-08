@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 /*
  * 
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  *
  */
 public interface SequenceReset {

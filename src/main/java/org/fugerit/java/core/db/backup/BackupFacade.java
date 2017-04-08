@@ -18,7 +18,7 @@ import org.w3c.dom.Element;
 /*
  * 
  *
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  *
  */
 public class BackupFacade {

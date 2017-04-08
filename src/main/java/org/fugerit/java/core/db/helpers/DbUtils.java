@@ -9,7 +9,7 @@ import org.fugerit.java.core.log.LogFacade;
 /*
  * 
  * 
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  *
  */
 public class DbUtils {

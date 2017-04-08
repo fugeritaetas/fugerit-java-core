@@ -21,7 +21,7 @@ import org.fugerit.java.core.lang.helpers.ResultExHandler;
 /*
  * <p>Class helper for I/O operations on files.</p>
  *
- *  @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ *  @author Matteo a.k.a. Fugerit
  *
  */
 public class FileIO {

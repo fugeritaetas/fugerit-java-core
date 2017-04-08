@@ -6,10 +6,10 @@ import java.util.Properties;
 
 import org.fugerit.java.core.util.PropsIO;
 
-/*
+/**
  * <p>Helper class for wrapping a module versione meta information.</p>
  * 
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  *
  */
 public class BaseModuleVersion implements ModuleVersion { 

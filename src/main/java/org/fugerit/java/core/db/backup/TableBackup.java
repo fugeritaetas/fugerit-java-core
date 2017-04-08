@@ -12,7 +12,7 @@ import java.sql.SQLException;
  * essere rispettati eventuali vincoli di integrità
  * su altre tabelle.</p>
  * 
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  */
 public interface TableBackup {
 

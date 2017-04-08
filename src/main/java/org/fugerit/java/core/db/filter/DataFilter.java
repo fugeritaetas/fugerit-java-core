@@ -6,7 +6,7 @@ import org.fugerit.java.core.db.dao.DAOException;
 /*
  * 
  * 
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  *
  */
 public interface DataFilter {

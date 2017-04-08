@@ -11,7 +11,7 @@ import org.fugerit.java.core.db.helpers.DAOID;
 /*
  * 
  * 
- * @author Matteo a.k.a. Fugerit (d@fugerit.org)
+ * @author Matteo a.k.a. Fugerit
  *
  */
 public class SqlServerSeqIdGenerator extends BasicSeqIdGenerator {
