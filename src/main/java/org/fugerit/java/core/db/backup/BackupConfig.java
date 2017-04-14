@@ -21,8 +21,8 @@ import org.fugerit.java.core.xml.dom.DOMUtils;
 import org.fugerit.java.core.xml.dom.SearchDOM;
 import org.w3c.dom.Element;
 
-/*
- * 
+/**
+ * <p>Configurazion handler for backup.</p>
  *
  * @author Matteo a.k.a. Fugerit
  *
@@ -124,6 +124,7 @@ public class BackupConfig extends XMLConfigurableObject {
 	/* (non-Javadoc)
 	 * @see org.fugerit.java.core.cfg.ConfigurableObject#configure(org.w3c.dom.Element)
 	 */
+	@Override
 	public void configure(Element config) throws ConfigException {
 		try {
 			SearchDOM searchDOM = SearchDOM.newInstance( true , true );

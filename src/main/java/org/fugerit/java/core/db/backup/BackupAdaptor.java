@@ -7,18 +7,16 @@ import java.sql.SQLException;
 
 import org.w3c.dom.Element;
 
-/*
- * <p>Interface for a backup adaptor.</p>
- * 
- * <p>Backup adaptor provides custom functionality for data to backup.</p>
+/**
+ * <p>A Class implementing this interface provides custom functionalities for data to backup.</p>
  *
  * @author Matteo a.k.a. Fugerit
  *
  */
 public interface BackupAdaptor {
 
-	/*
-	 * Helper method for setting parameter to a PreparedStatement
+	/**
+	 * <p>Helper method for setting parameter to a PreparedStatement</p>
 	 * 
 	 * @param ps		PreparedStatement for current query
 	 * @param rsmd		ResultSetMetadataData for current query
@@ -28,8 +26,8 @@ public interface BackupAdaptor {
 	 */
 	public void set( PreparedStatement ps, ResultSetMetaData rsmd, Object obj, int index ) throws SQLException;
 	
-	/*
-	 * Helper method for getting objects from a ResultSet
+	/**
+	 * <p>Helper method for getting objects from a ResultSet</p>
 	 * 
 	 * @param rs		the ResultSet to look from
 	 * @param rsmd		ResultSetMetaData for current query
@@ -40,8 +38,8 @@ public interface BackupAdaptor {
 	public Object get( ResultSet rs, ResultSetMetaData rsmd, int index ) throws SQLException;
 	
 	
-	/*
-	 * Configure the adaptor
+	/**
+	 * <p>Configure the adaptor</p>
 	 * 
 	 * @param config		the custom configuration for this adaptor
 	 * @throws Exception	if configuration fail
